@@ -1,0 +1,81 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    outline: none;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(#e66465, #9198e5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container h1 {
+    font-size: 50px;
+}
+
+.container .btns {
+    display: flex;
+    gap: 30px;
+}
+
+.container .btns  button {
+    padding: 10px 20px;
+    font-size: 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 30px;
+    transition:  all 0.5s linear ;
+    margin-top: 20px;  
+    margin-bottom: 20px;
+}
+
+.container .btns button:nth-child(1){
+    background: green;
+    color: white;
+}
+
+.container .btns button:nth-child(2){
+    background: red;
+    color: white;
+}
+
+.container .btns button:nth-child(3){
+    background: yellow;
+    color: #000;
+}
+
+.container .btns button:nth-child(4){
+    background: rgba(4, 191, 243, 0.803);
+    color: #000;
+}
+
+.container .btns button:hover{
+    box-shadow: 0 0 10px 5px rgba( 0, 0, 0, 0.2);
+}
+.container .btns button:active{
+    box-shadow: inset 0 0 5px 5px rgba( 0, 0, 0, 0.2);
+}
+
+.container .tochka {
+    position: relative;
+    top: -5px;
+   animation: animate 1s infinite ease;
+}
+
+@keyframes animate {
+    0% {
+        color: transparent;
+    }
+    100% {
+        color: #000;
+    }
+}
